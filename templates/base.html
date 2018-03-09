@@ -1,0 +1,96 @@
+<!-- <!DOCTYPE html>
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Elegant Resume a Personal Category Flat Bootstrap Responsive Website Template| Home :: w3layouts</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Elegant Resume Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+<!-- //js -->
+<link href='//fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+
+
+<!-- start-smooth-scrolling -->
+<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+
+
+
+
+
+
+
+  {% block head_css %}{% endblock %}
+<!--gallery-->
+<!--startsmothscrolling-->
+
+
+
+{% block head_javascript %}{% endblock %}
+
+
+
+{% block header %}
+
+<!-- contact -->
+<div class="contact" id="contact">
+	<div class="container">
+	<span class="about-top-w3">Confused Programer</span>
+		<h4 class="title-w3ls">Sangram kakade</h4>
+
+
+
+		</div>
+	</div>
+
+<!-- //about -->
+
+	<div class="footer">
+		<div class="container">
+			<p>© 2018 Elegant Resume. All rights reserved | Design by <a href="">Sangram</a></p>
+		</div>
+	</div>
+<!-- //footer -->
+<script src="{% static 'js/bars.js' %}"></script>
+
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+				};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+	</script>{% endblock  %}
+<!-- //here ends scrolling icon -->
+  {% block maincontent %}{% endblock  %}
+</body>
+</html>
